@@ -71,14 +71,18 @@ alternative skins or themes... I mean, why not ship your art-project
 software with the art - the fanfiction, music and art all baked
 into a single container that happes to be the thing you run?
 
-And I don't think that this comes at the cost of anything, or at
-least anything that matters. Dr. Hipp has famously said that SQLite3
-isn't competing with MySQL or Postgres; it's competing with fopen().
+And I don't think that this comes at the cost of... much of anything,
+and might even be a performance win overall. There's a very modest
+startup cost to thos approach, a reasonable tradeoff, but SQLite
+is wildly more reliable than reading or writing text-based data
+formats off the metal and - somehow, incredibly - in many cases
+[SQLite is 35% faster than
+fopen()](https://www3.sqlite.org/matrix/fasterthanfs.html)!
 
-So hear me out: if an ELF is almost a database, what can we do, 
-what do we get, if we make it all-the-way a database?
+Dr. Hipp has famously said that SQLite3 isn't competing with MySQL
+or Postgres; it's competing with fopen().
 
-If SQLite is competing with fopen(), what if we just... let SQLite win?
+So what happens, what do we get, if we... let SQLite win?
 
 # Background 
 
