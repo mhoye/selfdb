@@ -21,32 +21,38 @@ useful tools or expressive works with the software they ship.
 
 # The longer story.
 
-In a small part of a much longer set of missives on coding style,
-John Carmack of ID fame (among many other things) once suggested
-(among many other things) that "... If the work is close to purely
-functional, with few references to global state, try to make it
-completely functional." I was reminded of this when Zakaria's work
-was announced, as well Greenspun's Tenth Rule, saying that "Any
-sufficiently complicated C or Fortran program contains an ad hoc,
-informally-specified, bug-ridden, slow implementation of half of
-Common Lisp."
+In a small part of a much longer set of discussions about coding
+style and techniques, John Carmack of ID fame (among many other
+things) has suggested that "... [If the work is close to purely
+functional](https://cbarrete.com/carmack.html), with few references
+to global state, try to make it completely functional."
 
-And the two questions that seem to emerge from that are, first:
-should we be elevating Carmack's idea to a general principle? In
+I was thinking of this, and remembering [Greenspun's Tenth
+Rule](https://en.wikipedia.org/wiki/Greenspun's_tenth_rule), that
+"any sufficiently complicated C or Fortran program contains an ad
+hoc, informally-specified, bug-ridden, slow implementation of half
+of Common Lisp" - when Zakaria introduced his work.
+
+And the two questions that I think emerge from that are, first, in
 terms of the platonic ideal shapes and structures of computer science
-- state machines, functional programmings, databases, if something
-is most of the way to [being a thing] then should we try to get it
-all the way to [being that thing] so that we can leverage of all
-the research theory and benefits of [being that thing]?
+the state machines, functional approaches, databases, and so on:
+should Carmack's idea that if you're almost there consider going
+all the way be elevated to a general principle? 
 
-And second: what if every sufficently complex data format becomes
-an informally specified, bug-ridden, slow implementation of half
-of a database? 
+If something is most of the way to [being a thing] then should we
+try to get it all the way to [being that thing] so that we can
+leverage of all the research theory and benefits of [being that
+thing]?
 
-If an executable is most of the way to being a database, what does
-getting it all the way to being a database get us? I think we can 
-start answering that question by asking, what else do we have lying
-around next to our executables, that are also almost a database? 
+And second: what if every sufficently complex data format is
+effectively an informally specified, bug-ridden, slow implementation
+of half of a database?
+
+If that's the case, if an executable is already most of the way to
+being a database, what does getting it all the way to being a
+database get us? I think we can start answering that question by
+asking, what else do we have lying around next to our executables,
+that are also almost a database?
 
 I believe the answer to both of those question is: a lot.
 
